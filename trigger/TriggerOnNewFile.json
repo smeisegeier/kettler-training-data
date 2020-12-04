@@ -1,0 +1,24 @@
+{
+	"name": "TriggerOnNewFile",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "KettlerXmlTest",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/input/blobs/Training",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/e19d6ff2-4e21-45a3-8bd5-e4c841f563c6/resourceGroups/DemoResourceGroup/providers/Microsoft.Storage/storageAccounts/demoresstorage",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}

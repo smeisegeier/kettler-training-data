@@ -1,0 +1,25 @@
+{
+	"name": "XmlDataset_input",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "InputBlob",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"XmlReaderSettings.ConformanceLevel": {
+				"type": "string",
+				"defaultValue": "ConformanceLevel.Fragment"
+			}
+		},
+		"annotations": [],
+		"type": "Xml",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Training 02.12.2017 18h32m23s.xml",
+				"container": "input"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

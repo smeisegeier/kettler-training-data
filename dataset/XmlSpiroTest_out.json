@@ -1,0 +1,22 @@
+{
+	"name": "XmlSpiroTest_out",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "OutputSql",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "CustId",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "spiro"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,22 @@
+{
+	"name": "TestXls_input",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "InputBlob",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetName": "Zeiten",
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "_Zeiten19.xlsx",
+				"container": "test"
+			},
+			"firstRowAsHeader": true
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

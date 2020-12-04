@@ -1,0 +1,22 @@
+{
+	"name": "TestXml_out",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "OutputSql",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Name",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Kettler_0"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

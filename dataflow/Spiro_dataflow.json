@@ -1,0 +1,35 @@
+{
+	"name": "Spiro_dataflow",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"dataset": {
+						"referenceName": "XmlSpiro_in",
+						"type": "DatasetReference"
+					},
+					"name": "SourceXmlSpiro"
+				}
+			],
+			"sinks": [
+				{
+					"dataset": {
+						"referenceName": "XmlSpiro_out",
+						"type": "DatasetReference"
+					},
+					"name": "DestXmlSpiro"
+				}
+			],
+			"transformations": [
+				{
+					"name": "FlattenBestValues"
+				},
+				{
+					"name": "AddMeta"
+				}
+			],
+			"script": "source(output(\n\t\tndd as ({@SchemaVersion} as double, {@Version} as string, Patients as (Patient as ({@ID} as date, {@PatientAutoID} as short, FirstName as string, Intervals as (Interval as ({@Modified} as string, {@TestIntervalAutoID} as short, LungAge as boolean, Order as ({@ID} as date, TypeOfTest as string), OrderID as date, PredictedSet as (Dlco as string, EthnicCorrection as boolean, Spiro as string), Protocol as ({@ID} as string, Agent as string, Name as string), Reviewers as string, Technicians as string, Tests as (Test as ({@StageType} as string, {@TestAutoID} as short, {@TypeOfTest} as string, BestValues as ({@ValueSelection} as string, ResultParameter as ({@ID} as string, DataValue as double, LLNormalValue as double, PredictedValue as double, Unit as string)[]), Device as (DeviceType as string, SWVersion as string, SerialNumber as integer), PatientDataAtTestTime as (ComputedDateOfBirth as boolean, DateOfBirth as date, Ethnicity as string, Gender as string, Height as double, Weight as short), ProtocolStage as string, QualityGrade as string, QualityGradeOriginal as string, SWVersion as string, TestDate as string, Trials as (Trial as ({@TrialAutoID} as short, Accepted as boolean, AcceptedOriginal as boolean, ChannelFlow as (SamplingInterval as double, SamplingValues as ({@TypeOfData} as string, {_value_} as string), TimeZeroOffset as double), ChannelVolume as (DefaultVTPlotDrawEndIdx as short, SamplingInterval as double, SamplingValues as ({@TypeOfData} as string, {_value_} as string), TimeZeroOffset as double), Date as string, ManualAmbientOverride as boolean, Number as short, Rank as short, RankOriginal as short, ResultParameters as (ResultParameter as ({@ID} as string, DataValue as double, LLNormalValue as double, PredictedValue as double, Unit as string)[]))[]))))), LastName as string, PatientDataAtPresent as (ComputedDateOfBirth as boolean, DateOfBirth as date, Ethnicity as string, Gender as string, Height as double, Weight as short))))\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: false,\n\trowUrlColumn: 'FileName',\n\tinferDriftedColumnTypes: true,\n\tvalidationMode: 'none',\n\tnamespaces: true) ~> SourceXmlSpiro\nSourceXmlSpiro foldDown(unroll(ndd.Patients.Patient.Intervals.Interval.Tests.Test.BestValues.ResultParameter, ndd.Patients.Patient.Intervals.Interval.Tests.Test.BestValues.ResultParameter),\n\tmapColumn(\n\t\t{@ID} = ndd.Patients.Patient.Intervals.Interval.Tests.Test.BestValues.ResultParameter.{@ID},\n\t\tDataValue = ndd.Patients.Patient.Intervals.Interval.Tests.Test.BestValues.ResultParameter.DataValue,\n\t\tLLNormalValue = ndd.Patients.Patient.Intervals.Interval.Tests.Test.BestValues.ResultParameter.LLNormalValue,\n\t\tPredictedValue = ndd.Patients.Patient.Intervals.Interval.Tests.Test.BestValues.ResultParameter.PredictedValue,\n\t\tUnit = ndd.Patients.Patient.Intervals.Interval.Tests.Test.BestValues.ResultParameter.Unit,\n\t\tFileName\n\t),\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true) ~> FlattenBestValues\nFlattenBestValues derive(CreatedOn = currentTimestamp()) ~> AddMeta\nAddMeta sink(input(\n\t\tDataValue as string,\n\t\tUnit as string,\n\t\tID as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tdeletable:false,\n\tinsertable:true,\n\tupdateable:false,\n\tupsertable:false,\n\trecreate:true,\n\tformat: 'table',\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true,\n\terrorHandlingOption: 'stopOnFirstError') ~> DestXmlSpiro"
+		}
+	}
+}

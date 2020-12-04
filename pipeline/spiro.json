@@ -1,0 +1,197 @@
+{
+	"name": "spiro",
+	"properties": {
+		"activities": [
+			{
+				"name": "getSpiro",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "XmlSource",
+						"storeSettings": {
+							"type": "AzureBlobStorageReadSettings",
+							"recursive": true,
+							"wildcardFileName": "*.xml"
+						},
+						"formatSettings": {
+							"type": "XmlReadSettings",
+							"validationMode": "none"
+						}
+					},
+					"sink": {
+						"type": "AzureSqlSink",
+						"tableOption": "autoCreate",
+						"disableMetricsCollection": false
+					},
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"path": "$['ndd']['Patients']['Patient']['LastName']"
+								},
+								"sink": {
+									"name": "LastName",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['ndd']['Patients']['Patient']['FirstName']"
+								},
+								"sink": {
+									"name": "FirstName",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['ndd']['Patients']['Patient']['Intervals']['Interval']['Reviewers']"
+								},
+								"sink": {
+									"name": "Reviewers",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['ndd']['Patients']['Patient']['Intervals']['Interval']['Technicians']"
+								},
+								"sink": {
+									"name": "Technicians",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['ndd']['Patients']['Patient']['Intervals']['Interval']['OrderID']"
+								},
+								"sink": {
+									"name": "OrderID",
+									"type": "DateTime"
+								}
+							},
+							{
+								"source": {
+									"path": "$['ndd']['Patients']['Patient']['Intervals']['Interval']['LungAge']"
+								},
+								"sink": {
+									"name": "LungAge",
+									"type": "Boolean"
+								}
+							},
+							{
+								"source": {
+									"path": "$['ndd']['Patients']['Patient']['Intervals']['Interval']['Tests']['Test']['TestDate']"
+								},
+								"sink": {
+									"name": "TestDate",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['ndd']['Patients']['Patient']['Intervals']['Interval']['Tests']['Test']['BestValues']['ResultParameter'][0]['DataValue']"
+								},
+								"sink": {
+									"name": "DataValue",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['ndd']['Patients']['Patient']['Intervals']['Interval']['Tests']['Test']['BestValues']['ResultParameter'][0]['Unit']"
+								},
+								"sink": {
+									"name": "Unit",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['ndd']['Patients']['Patient']['Intervals']['Interval']['Tests']['Test']['BestValues']['ResultParameter'][0]['PredictedValue']"
+								},
+								"sink": {
+									"name": "PredictedValue",
+									"type": "Double"
+								}
+							},
+							{
+								"source": {
+									"path": "$['ndd']['Patients']['Patient']['Intervals']['Interval']['Tests']['Test']['BestValues']['ResultParameter'][0]['LLNormalValue']"
+								},
+								"sink": {
+									"name": "LLNormalValue",
+									"type": "Double"
+								}
+							},
+							{
+								"source": {
+									"path": "$['ndd']['Patients']['Patient']['Intervals']['Interval']['Tests']['Test']['BestValues']['@ValueSelection']"
+								},
+								"sink": {
+									"name": "@ValueSelection",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['ndd']['Patients']['Patient']['Intervals']['Interval']['Tests']['Test']['QualityGradeOriginal']"
+								},
+								"sink": {
+									"name": "QualityGradeOriginal",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['ndd']['Patients']['Patient']['Intervals']['Interval']['Tests']['Test']['QualityGrade']"
+								},
+								"sink": {
+									"name": "QualityGrade",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['ndd']['Patients']['Patient']['Intervals']['Interval']['Tests']['Test']['ProtocolStage']"
+								},
+								"sink": {
+									"name": "ProtocolStage",
+									"type": "String"
+								}
+							}
+						],
+						"collectionReference": "",
+						"mapComplexValuesToString": true
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "XmlSpiro_in",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "XmlSpiroTest_out",
+						"type": "DatasetReference"
+					}
+				]
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2020-09-06T18:05:51Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

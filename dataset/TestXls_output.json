@@ -1,0 +1,17 @@
+{
+	"name": "TestXls_output",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "OutputSql",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Zeiten"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

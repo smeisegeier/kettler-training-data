@@ -1,0 +1,19 @@
+{
+	"name": "JsonTest",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "OutputBlob",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "writtenbyfactory"
+			}
+		},
+		"schema": {}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

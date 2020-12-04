@@ -1,0 +1,19 @@
+{
+	"name": "XmlSpiro_in",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "InputBlob",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Xml",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Spiro.xml",
+				"container": "spiro"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
