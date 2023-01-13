@@ -1,0 +1,910 @@
+<Training>
+	<Device>SJ10X SKYLON 5</Device>
+	<Calibration>07655-350-2007</Calibration>
+	<Software>3367</Software>
+	<Date>04.01.2016</Date>
+	<Time>21:15:47</Time>
+	<RecordIntervall>10</RecordIntervall>
+	<Transmission>9.5</Transmission>
+	<Energy>6.0</Energy>
+</Training>
+<Record>
+	<Pulse>0</Pulse>
+	<Power>25</Power>
+	<RPM>38</RPM>
+</Record>
+<Record>
+	<Pulse>0</Pulse>
+	<Power>65</Power>
+	<RPM>45</RPM>
+</Record>
+<Record>
+	<Pulse>91</Pulse>
+	<Power>130</Power>
+	<RPM>44</RPM>
+</Record>
+<Record>
+	<Pulse>0</Pulse>
+	<Power>130</Power>
+	<RPM>46</RPM>
+</Record>
+<Record>
+	<Pulse>0</Pulse>
+	<Power>130</Power>
+	<RPM>48</RPM>
+</Record>
+<Record>
+	<Pulse>0</Pulse>
+	<Power>130</Power>
+	<RPM>48</RPM>
+</Record>
+<Record>
+	<Pulse>0</Pulse>
+	<Power>130</Power>
+	<RPM>49</RPM>
+</Record>
+<Record>
+	<Pulse>0</Pulse>
+	<Power>130</Power>
+	<RPM>49</RPM>
+</Record>
+<Record>
+	<Pulse>0</Pulse>
+	<Power>130</Power>
+	<RPM>49</RPM>
+</Record>
+<Record>
+	<Pulse>0</Pulse>
+	<Power>130</Power>
+	<RPM>48</RPM>
+</Record>
+<Record>
+	<Pulse>0</Pulse>
+	<Power>130</Power>
+	<RPM>49</RPM>
+</Record>
+<Record>
+	<Pulse>0</Pulse>
+	<Power>130</Power>
+	<RPM>49</RPM>
+</Record>
+<Record>
+	<Pulse>0</Pulse>
+	<Power>130</Power>
+	<RPM>50</RPM>
+</Record>
+<Record>
+	<Pulse>0</Pulse>
+	<Power>130</Power>
+	<RPM>50</RPM>
+</Record>
+<Record>
+	<Pulse>0</Pulse>
+	<Power>130</Power>
+	<RPM>49</RPM>
+</Record>
+<Record>
+	<Pulse>56</Pulse>
+	<Power>130</Power>
+	<RPM>51</RPM>
+</Record>
+<Record>
+	<Pulse>0</Pulse>
+	<Power>140</Power>
+	<RPM>46</RPM>
+</Record>
+<Record>
+	<Pulse>111</Pulse>
+	<Power>140</Power>
+	<RPM>45</RPM>
+</Record>
+<Record>
+	<Pulse>113</Pulse>
+	<Power>140</Power>
+	<RPM>44</RPM>
+</Record>
+<Record>
+	<Pulse>114</Pulse>
+	<Power>140</Power>
+	<RPM>45</RPM>
+</Record>
+<Record>
+	<Pulse>111</Pulse>
+	<Power>140</Power>
+	<RPM>49</RPM>
+</Record>
+<Record>
+	<Pulse>110</Pulse>
+	<Power>140</Power>
+	<RPM>47</RPM>
+</Record>
+<Record>
+	<Pulse>112</Pulse>
+	<Power>140</Power>
+	<RPM>49</RPM>
+</Record>
+<Record>
+	<Pulse>113</Pulse>
+	<Power>140</Power>
+	<RPM>49</RPM>
+</Record>
+<Record>
+	<Pulse>113</Pulse>
+	<Power>140</Power>
+	<RPM>49</RPM>
+</Record>
+<Record>
+	<Pulse>113</Pulse>
+	<Power>140</Power>
+	<RPM>49</RPM>
+</Record>
+<Record>
+	<Pulse>114</Pulse>
+	<Power>140</Power>
+	<RPM>49</RPM>
+</Record>
+<Record>
+	<Pulse>114</Pulse>
+	<Power>140</Power>
+	<RPM>49</RPM>
+</Record>
+<Record>
+	<Pulse>114</Pulse>
+	<Power>140</Power>
+	<RPM>49</RPM>
+</Record>
+<Record>
+	<Pulse>114</Pulse>
+	<Power>140</Power>
+	<RPM>49</RPM>
+</Record>
+<Record>
+	<Pulse>114</Pulse>
+	<Power>140</Power>
+	<RPM>49</RPM>
+</Record>
+<Record>
+	<Pulse>114</Pulse>
+	<Power>140</Power>
+	<RPM>49</RPM>
+</Record>
+<Record>
+	<Pulse>113</Pulse>
+	<Power>140</Power>
+	<RPM>49</RPM>
+</Record>
+<Record>
+	<Pulse>111</Pulse>
+	<Power>140</Power>
+	<RPM>48</RPM>
+</Record>
+<Record>
+	<Pulse>111</Pulse>
+	<Power>140</Power>
+	<RPM>46</RPM>
+</Record>
+<Record>
+	<Pulse>111</Pulse>
+	<Power>140</Power>
+	<RPM>48</RPM>
+</Record>
+<Record>
+	<Pulse>111</Pulse>
+	<Power>140</Power>
+	<RPM>47</RPM>
+</Record>
+<Record>
+	<Pulse>111</Pulse>
+	<Power>140</Power>
+	<RPM>48</RPM>
+</Record>
+<Record>
+	<Pulse>112</Pulse>
+	<Power>140</Power>
+	<RPM>48</RPM>
+</Record>
+<Record>
+	<Pulse>113</Pulse>
+	<Power>140</Power>
+	<RPM>49</RPM>
+</Record>
+<Record>
+	<Pulse>114</Pulse>
+	<Power>140</Power>
+	<RPM>50</RPM>
+</Record>
+<Record>
+	<Pulse>117</Pulse>
+	<Power>140</Power>
+	<RPM>51</RPM>
+</Record>
+<Record>
+	<Pulse>119</Pulse>
+	<Power>140</Power>
+	<RPM>51</RPM>
+</Record>
+<Record>
+	<Pulse>117</Pulse>
+	<Power>140</Power>
+	<RPM>50</RPM>
+</Record>
+<Record>
+	<Pulse>117</Pulse>
+	<Power>140</Power>
+	<RPM>50</RPM>
+</Record>
+<Record>
+	<Pulse>117</Pulse>
+	<Power>140</Power>
+	<RPM>49</RPM>
+</Record>
+<Record>
+	<Pulse>116</Pulse>
+	<Power>140</Power>
+	<RPM>49</RPM>
+</Record>
+<Record>
+	<Pulse>116</Pulse>
+	<Power>140</Power>
+	<RPM>50</RPM>
+</Record>
+<Record>
+	<Pulse>116</Pulse>
+	<Power>140</Power>
+	<RPM>49</RPM>
+</Record>
+<Record>
+	<Pulse>115</Pulse>
+	<Power>140</Power>
+	<RPM>49</RPM>
+</Record>
+<Record>
+	<Pulse>114</Pulse>
+	<Power>140</Power>
+	<RPM>49</RPM>
+</Record>
+<Record>
+	<Pulse>114</Pulse>
+	<Power>140</Power>
+	<RPM>49</RPM>
+</Record>
+<Record>
+	<Pulse>114</Pulse>
+	<Power>140</Power>
+	<RPM>49</RPM>
+</Record>
+<Record>
+	<Pulse>115</Pulse>
+	<Power>140</Power>
+	<RPM>50</RPM>
+</Record>
+<Record>
+	<Pulse>117</Pulse>
+	<Power>140</Power>
+	<RPM>51</RPM>
+</Record>
+<Record>
+	<Pulse>117</Pulse>
+	<Power>140</Power>
+	<RPM>49</RPM>
+</Record>
+<Record>
+	<Pulse>115</Pulse>
+	<Power>140</Power>
+	<RPM>50</RPM>
+</Record>
+<Record>
+	<Pulse>114</Pulse>
+	<Power>140</Power>
+	<RPM>48</RPM>
+</Record>
+<Record>
+	<Pulse>114</Pulse>
+	<Power>140</Power>
+	<RPM>49</RPM>
+</Record>
+<Record>
+	<Pulse>114</Pulse>
+	<Power>140</Power>
+	<RPM>49</RPM>
+</Record>
+<Record>
+	<Pulse>113</Pulse>
+	<Power>140</Power>
+	<RPM>48</RPM>
+</Record>
+<Record>
+	<Pulse>112</Pulse>
+	<Power>140</Power>
+	<RPM>49</RPM>
+</Record>
+<Record>
+	<Pulse>113</Pulse>
+	<Power>140</Power>
+	<RPM>50</RPM>
+</Record>
+<Record>
+	<Pulse>114</Pulse>
+	<Power>140</Power>
+	<RPM>50</RPM>
+</Record>
+<Record>
+	<Pulse>115</Pulse>
+	<Power>140</Power>
+	<RPM>50</RPM>
+</Record>
+<Record>
+	<Pulse>116</Pulse>
+	<Power>140</Power>
+	<RPM>50</RPM>
+</Record>
+<Record>
+	<Pulse>116</Pulse>
+	<Power>140</Power>
+	<RPM>49</RPM>
+</Record>
+<Record>
+	<Pulse>116</Pulse>
+	<Power>140</Power>
+	<RPM>50</RPM>
+</Record>
+<Record>
+	<Pulse>119</Pulse>
+	<Power>140</Power>
+	<RPM>49</RPM>
+</Record>
+<Record>
+	<Pulse>120</Pulse>
+	<Power>140</Power>
+	<RPM>51</RPM>
+</Record>
+<Record>
+	<Pulse>118</Pulse>
+	<Power>140</Power>
+	<RPM>51</RPM>
+</Record>
+<Record>
+	<Pulse>118</Pulse>
+	<Power>140</Power>
+	<RPM>51</RPM>
+</Record>
+<Record>
+	<Pulse>118</Pulse>
+	<Power>140</Power>
+	<RPM>51</RPM>
+</Record>
+<Record>
+	<Pulse>117</Pulse>
+	<Power>140</Power>
+	<RPM>50</RPM>
+</Record>
+<Record>
+	<Pulse>116</Pulse>
+	<Power>140</Power>
+	<RPM>50</RPM>
+</Record>
+<Record>
+	<Pulse>115</Pulse>
+	<Power>140</Power>
+	<RPM>49</RPM>
+</Record>
+<Record>
+	<Pulse>115</Pulse>
+	<Power>140</Power>
+	<RPM>50</RPM>
+</Record>
+<Record>
+	<Pulse>116</Pulse>
+	<Power>140</Power>
+	<RPM>50</RPM>
+</Record>
+<Record>
+	<Pulse>116</Pulse>
+	<Power>140</Power>
+	<RPM>51</RPM>
+</Record>
+<Record>
+	<Pulse>115</Pulse>
+	<Power>140</Power>
+	<RPM>50</RPM>
+</Record>
+<Record>
+	<Pulse>115</Pulse>
+	<Power>140</Power>
+	<RPM>51</RPM>
+</Record>
+<Record>
+	<Pulse>115</Pulse>
+	<Power>140</Power>
+	<RPM>51</RPM>
+</Record>
+<Record>
+	<Pulse>118</Pulse>
+	<Power>140</Power>
+	<RPM>50</RPM>
+</Record>
+<Record>
+	<Pulse>117</Pulse>
+	<Power>140</Power>
+	<RPM>51</RPM>
+</Record>
+<Record>
+	<Pulse>118</Pulse>
+	<Power>140</Power>
+	<RPM>49</RPM>
+</Record>
+<Record>
+	<Pulse>119</Pulse>
+	<Power>140</Power>
+	<RPM>51</RPM>
+</Record>
+<Record>
+	<Pulse>118</Pulse>
+	<Power>140</Power>
+	<RPM>51</RPM>
+</Record>
+<Record>
+	<Pulse>118</Pulse>
+	<Power>140</Power>
+	<RPM>50</RPM>
+</Record>
+<Record>
+	<Pulse>116</Pulse>
+	<Power>140</Power>
+	<RPM>49</RPM>
+</Record>
+<Record>
+	<Pulse>116</Pulse>
+	<Power>140</Power>
+	<RPM>49</RPM>
+</Record>
+<Record>
+	<Pulse>116</Pulse>
+	<Power>140</Power>
+	<RPM>47</RPM>
+</Record>
+<Record>
+	<Pulse>116</Pulse>
+	<Power>140</Power>
+	<RPM>49</RPM>
+</Record>
+<Record>
+	<Pulse>116</Pulse>
+	<Power>140</Power>
+	<RPM>49</RPM>
+</Record>
+<Record>
+	<Pulse>116</Pulse>
+	<Power>140</Power>
+	<RPM>48</RPM>
+</Record>
+<Record>
+	<Pulse>116</Pulse>
+	<Power>140</Power>
+	<RPM>48</RPM>
+</Record>
+<Record>
+	<Pulse>115</Pulse>
+	<Power>140</Power>
+	<RPM>49</RPM>
+</Record>
+<Record>
+	<Pulse>115</Pulse>
+	<Power>140</Power>
+	<RPM>49</RPM>
+</Record>
+<Record>
+	<Pulse>115</Pulse>
+	<Power>140</Power>
+	<RPM>48</RPM>
+</Record>
+<Record>
+	<Pulse>115</Pulse>
+	<Power>140</Power>
+	<RPM>50</RPM>
+</Record>
+<Record>
+	<Pulse>115</Pulse>
+	<Power>140</Power>
+	<RPM>49</RPM>
+</Record>
+<Record>
+	<Pulse>115</Pulse>
+	<Power>140</Power>
+	<RPM>50</RPM>
+</Record>
+<Record>
+	<Pulse>115</Pulse>
+	<Power>140</Power>
+	<RPM>49</RPM>
+</Record>
+<Record>
+	<Pulse>116</Pulse>
+	<Power>140</Power>
+	<RPM>50</RPM>
+</Record>
+<Record>
+	<Pulse>117</Pulse>
+	<Power>140</Power>
+	<RPM>49</RPM>
+</Record>
+<Record>
+	<Pulse>116</Pulse>
+	<Power>140</Power>
+	<RPM>48</RPM>
+</Record>
+<Record>
+	<Pulse>116</Pulse>
+	<Power>140</Power>
+	<RPM>49</RPM>
+</Record>
+<Record>
+	<Pulse>116</Pulse>
+	<Power>140</Power>
+	<RPM>49</RPM>
+</Record>
+<Record>
+	<Pulse>116</Pulse>
+	<Power>140</Power>
+	<RPM>50</RPM>
+</Record>
+<Record>
+	<Pulse>116</Pulse>
+	<Power>140</Power>
+	<RPM>49</RPM>
+</Record>
+<Record>
+	<Pulse>116</Pulse>
+	<Power>140</Power>
+	<RPM>49</RPM>
+</Record>
+<Record>
+	<Pulse>116</Pulse>
+	<Power>140</Power>
+	<RPM>49</RPM>
+</Record>
+<Record>
+	<Pulse>116</Pulse>
+	<Power>140</Power>
+	<RPM>49</RPM>
+</Record>
+<Record>
+	<Pulse>116</Pulse>
+	<Power>140</Power>
+	<RPM>49</RPM>
+</Record>
+<Record>
+	<Pulse>116</Pulse>
+	<Power>140</Power>
+	<RPM>50</RPM>
+</Record>
+<Record>
+	<Pulse>117</Pulse>
+	<Power>140</Power>
+	<RPM>50</RPM>
+</Record>
+<Record>
+	<Pulse>117</Pulse>
+	<Power>140</Power>
+	<RPM>50</RPM>
+</Record>
+<Record>
+	<Pulse>118</Pulse>
+	<Power>140</Power>
+	<RPM>48</RPM>
+</Record>
+<Record>
+	<Pulse>117</Pulse>
+	<Power>140</Power>
+	<RPM>48</RPM>
+</Record>
+<Record>
+	<Pulse>115</Pulse>
+	<Power>140</Power>
+	<RPM>46</RPM>
+</Record>
+<Record>
+	<Pulse>114</Pulse>
+	<Power>140</Power>
+	<RPM>48</RPM>
+</Record>
+<Record>
+	<Pulse>115</Pulse>
+	<Power>140</Power>
+	<RPM>48</RPM>
+</Record>
+<Record>
+	<Pulse>115</Pulse>
+	<Power>140</Power>
+	<RPM>46</RPM>
+</Record>
+<Record>
+	<Pulse>116</Pulse>
+	<Power>140</Power>
+	<RPM>48</RPM>
+</Record>
+<Record>
+	<Pulse>118</Pulse>
+	<Power>140</Power>
+	<RPM>49</RPM>
+</Record>
+<Record>
+	<Pulse>118</Pulse>
+	<Power>140</Power>
+	<RPM>48</RPM>
+</Record>
+<Record>
+	<Pulse>118</Pulse>
+	<Power>140</Power>
+	<RPM>48</RPM>
+</Record>
+<Record>
+	<Pulse>116</Pulse>
+	<Power>140</Power>
+	<RPM>48</RPM>
+</Record>
+<Record>
+	<Pulse>114</Pulse>
+	<Power>140</Power>
+	<RPM>49</RPM>
+</Record>
+<Record>
+	<Pulse>114</Pulse>
+	<Power>140</Power>
+	<RPM>49</RPM>
+</Record>
+<Record>
+	<Pulse>116</Pulse>
+	<Power>140</Power>
+	<RPM>47</RPM>
+</Record>
+<Record>
+	<Pulse>116</Pulse>
+	<Power>140</Power>
+	<RPM>47</RPM>
+</Record>
+<Record>
+	<Pulse>116</Pulse>
+	<Power>140</Power>
+	<RPM>47</RPM>
+</Record>
+<Record>
+	<Pulse>116</Pulse>
+	<Power>140</Power>
+	<RPM>48</RPM>
+</Record>
+<Record>
+	<Pulse>116</Pulse>
+	<Power>140</Power>
+	<RPM>48</RPM>
+</Record>
+<Record>
+	<Pulse>116</Pulse>
+	<Power>140</Power>
+	<RPM>47</RPM>
+</Record>
+<Record>
+	<Pulse>116</Pulse>
+	<Power>140</Power>
+	<RPM>49</RPM>
+</Record>
+<Record>
+	<Pulse>115</Pulse>
+	<Power>140</Power>
+	<RPM>48</RPM>
+</Record>
+<Record>
+	<Pulse>115</Pulse>
+	<Power>140</Power>
+	<RPM>50</RPM>
+</Record>
+<Record>
+	<Pulse>115</Pulse>
+	<Power>140</Power>
+	<RPM>50</RPM>
+</Record>
+<Record>
+	<Pulse>115</Pulse>
+	<Power>140</Power>
+	<RPM>51</RPM>
+</Record>
+<Record>
+	<Pulse>116</Pulse>
+	<Power>140</Power>
+	<RPM>49</RPM>
+</Record>
+<Record>
+	<Pulse>116</Pulse>
+	<Power>140</Power>
+	<RPM>50</RPM>
+</Record>
+<Record>
+	<Pulse>115</Pulse>
+	<Power>140</Power>
+	<RPM>49</RPM>
+</Record>
+<Record>
+	<Pulse>114</Pulse>
+	<Power>140</Power>
+	<RPM>49</RPM>
+</Record>
+<Record>
+	<Pulse>115</Pulse>
+	<Power>140</Power>
+	<RPM>49</RPM>
+</Record>
+<Record>
+	<Pulse>116</Pulse>
+	<Power>140</Power>
+	<RPM>51</RPM>
+</Record>
+<Record>
+	<Pulse>118</Pulse>
+	<Power>140</Power>
+	<RPM>49</RPM>
+</Record>
+<Record>
+	<Pulse>119</Pulse>
+	<Power>140</Power>
+	<RPM>49</RPM>
+</Record>
+<Record>
+	<Pulse>118</Pulse>
+	<Power>140</Power>
+	<RPM>51</RPM>
+</Record>
+<Record>
+	<Pulse>118</Pulse>
+	<Power>135</Power>
+	<RPM>50</RPM>
+</Record>
+<Record>
+	<Pulse>118</Pulse>
+	<Power>130</Power>
+	<RPM>50</RPM>
+</Record>
+<Record>
+	<Pulse>119</Pulse>
+	<Power>130</Power>
+	<RPM>50</RPM>
+</Record>
+<Record>
+	<Pulse>121</Pulse>
+	<Power>130</Power>
+	<RPM>51</RPM>
+</Record>
+<Record>
+	<Pulse>121</Pulse>
+	<Power>130</Power>
+	<RPM>50</RPM>
+</Record>
+<Record>
+	<Pulse>120</Pulse>
+	<Power>130</Power>
+	<RPM>50</RPM>
+</Record>
+<Record>
+	<Pulse>118</Pulse>
+	<Power>130</Power>
+	<RPM>49</RPM>
+</Record>
+<Record>
+	<Pulse>117</Pulse>
+	<Power>130</Power>
+	<RPM>50</RPM>
+</Record>
+<Record>
+	<Pulse>117</Pulse>
+	<Power>130</Power>
+	<RPM>50</RPM>
+</Record>
+<Record>
+	<Pulse>118</Pulse>
+	<Power>130</Power>
+	<RPM>50</RPM>
+</Record>
+<Record>
+	<Pulse>119</Pulse>
+	<Power>130</Power>
+	<RPM>50</RPM>
+</Record>
+<Record>
+	<Pulse>117</Pulse>
+	<Power>130</Power>
+	<RPM>46</RPM>
+</Record>
+<Record>
+	<Pulse>115</Pulse>
+	<Power>130</Power>
+	<RPM>47</RPM>
+</Record>
+<Record>
+	<Pulse>113</Pulse>
+	<Power>130</Power>
+	<RPM>47</RPM>
+</Record>
+<Record>
+	<Pulse>112</Pulse>
+	<Power>130</Power>
+	<RPM>49</RPM>
+</Record>
+<Record>
+	<Pulse>113</Pulse>
+	<Power>130</Power>
+	<RPM>48</RPM>
+</Record>
+<Record>
+	<Pulse>115</Pulse>
+	<Power>130</Power>
+	<RPM>48</RPM>
+</Record>
+<Record>
+	<Pulse>116</Pulse>
+	<Power>130</Power>
+	<RPM>50</RPM>
+</Record>
+<Record>
+	<Pulse>116</Pulse>
+	<Power>130</Power>
+	<RPM>50</RPM>
+</Record>
+<Record>
+	<Pulse>115</Pulse>
+	<Power>130</Power>
+	<RPM>49</RPM>
+</Record>
+<Record>
+	<Pulse>114</Pulse>
+	<Power>130</Power>
+	<RPM>51</RPM>
+</Record>
+<Record>
+	<Pulse>116</Pulse>
+	<Power>130</Power>
+	<RPM>48</RPM>
+</Record>
+<Record>
+	<Pulse>116</Pulse>
+	<Power>130</Power>
+	<RPM>50</RPM>
+</Record>
+<Record>
+	<Pulse>116</Pulse>
+	<Power>130</Power>
+	<RPM>52</RPM>
+</Record>
+<Record>
+	<Pulse>116</Pulse>
+	<Power>130</Power>
+	<RPM>50</RPM>
+</Record>
+<Record>
+	<Pulse>116</Pulse>
+	<Power>130</Power>
+	<RPM>50</RPM>
+</Record>
+<Record>
+	<Pulse>116</Pulse>
+	<Power>130</Power>
+	<RPM>49</RPM>
+</Record>
+<Record>
+	<Pulse>116</Pulse>
+	<Power>130</Power>
+	<RPM>49</RPM>
+</Record>
+<Record>
+	<Pulse>116</Pulse>
+	<Power>130</Power>
+	<RPM>50</RPM>
+</Record>
+<Record>
+	<Pulse>117</Pulse>
+	<Power>130</Power>
+	<RPM>50</RPM>
+</Record>
+<Record>
+	<Pulse>117</Pulse>
+	<Power>130</Power>
+	<RPM>43</RPM>
+</Record>
