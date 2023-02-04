@@ -1,0 +1,12 @@
+﻿@model System.IO.FileInfo[]
+
+<div class="form-container">
+    <a class="btn btn-danger btn-lg" asp-controller="Home" asp-action="SaveAndDeleteFiles">Save & Delete these Files</a>
+    <br />
+    <ul>
+        @foreach(var item in Model)
+        {
+            <li>@item.Name</li>
+        }
+    </ul>
+</div>

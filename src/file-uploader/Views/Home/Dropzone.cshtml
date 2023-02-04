@@ -1,0 +1,22 @@
+﻿
+<!-- dont /script> !!-->
+<head>
+    <link href="/lib/dropzone-5.7.0/dist/min/dropzone.min.css" rel="stylesheet" />
+    <script src="/lib/dropzone-5.7.0/dist/min/dropzone.min.js"></script>
+    <script src="/scripts/dropzone.js"></script>
+</head>
+
+<div class="form-container">
+    <h1 class="display-4">Dropzone</h1>
+    <div id="dropzone">
+        <form action="/Home/Upload"
+              class="dropzone needsclick dz-clickable"
+              id="uploader"
+              style="background-color:#cceebb">
+            <div class="dz-message needsclick">
+                Drop files here or click to upload.<br>
+            </div>          
+        </form>    
+    </div><br />
+    <a class="btn btn-primary" asp-action="Process" asp-controller="Home">Process all uploads</a>
+</div>

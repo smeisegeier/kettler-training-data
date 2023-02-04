@@ -1,0 +1,15 @@
+﻿@model Boolean
+
+<div class="container">
+@if (Model)
+{
+    <h1 class="display-4">It worked</h1>
+}
+else
+{
+    <h1 class="display-4">Oh noes</h1>
+}
+    <a class="btn btn-primary" asp-action="FindStreaks" data-toggle="tooltip" title="Refresh all streaks" data-placement="top">Ok & Refresh streaks</a>
+
+</div>
+
