@@ -5,8 +5,6 @@
 - the aim of this repo is to process and store `.xml` based training data from kettler `SJ10X SKYLON 5`
 - it comprises concurring approaches for processing: `azure-data-facory` and `net-core-webapp`
 
----
-
 ## processing
 
 ### azure-data-facory
@@ -31,8 +29,6 @@
 
 - files are uploaded into the `net-core-webapp` using a drag and drop web UI
 - data are processes with ![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=flat&logo=c-sharp&logoColor=white) ![.Net](https://img.shields.io/badge/.NET-5C2D91?style=flat&logo=.net&logoColor=white) routines
-
----
 
 ## analysis
 
