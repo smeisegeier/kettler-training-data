@@ -48,6 +48,10 @@
 
 ## built with
 
+### used modules
+
+- [`dropzone.js`](https://www.dropzonejs.com/)
+
 ### used packages
 
 ```xml
