@@ -39,19 +39,18 @@ namespace FileUploader
                 .AddUserSecrets<Program>()
                 .Build();
             // retrieve secrets
-            var db_usr = config["db_usr"];
-            var db_pw = config["db_pw"];
-
+            var db_con = config["db_con"];
 
             // $env:ASPNETCORE_ENVIRONMENT='Staging'
             services.AddControllersWithViews();
             //services.AddDbContext<MyDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
-          
+
             //services.AddDbContext<MyDbContext>(options => options.UseInMemoryDatabase("Test"));
- 
+
             services.AddDbContext<MyDbContext>(options => options
-                .UseSqlServer(@$"Server=tcp:demosqlserverxd.database.windows.net,1433;Database=DemoSqlDb;User ID = {db_usr}@demosqlserverxd;Password={db_pw};Trusted_Connection=False;Encrypt=True;"));
- 
+                .UseSqlServer(db_con)
+                );
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
