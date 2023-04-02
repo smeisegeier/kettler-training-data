@@ -1,8 +1,8 @@
 @startuml state-machine
 scale 600 width
 
-[*] -> State1
-State1 --> State2 : Succeeded
+[*] -> step0
+step0 --> step1 : xml
 State1 --> [*] : Aborted
 State2 --> State3 : Succeeded
 State2 --> [*] : Aborted
