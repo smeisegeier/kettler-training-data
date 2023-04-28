@@ -42,6 +42,8 @@
 
 - under construction 🚧
 
+> note: probably not. power pivot is still way too strong
+
 ## built with
 
 ### used modules
