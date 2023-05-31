@@ -36,11 +36,20 @@ namespace FileUploader.Controllers
 
         public IActionResult Index() => RedirectToAction(nameof(Dropzone));//=> View();
         public IActionResult Dropbasket() => View();
-        public IActionResult Dropzone() => View();
+        public IActionResult Dropzone()
+        {
+            // * still does not work since a FormattableString is needed (starting w/ $)
+            // var sql = System.IO.File.ReadAllText(Path.Combine(_webHostEnvironment.WebRootPath, "sql", "FindLastUpdate.sql"));
+            // * you must name the col as [Value]
+            FormattableString sql = $"SELECT max(TrainingDateTime) as [Value] FROM[kettler].[Trainings]";
+            var result = _context.Database.SqlQuery<string>(sql);
+            ViewBag.LastUpdate = result.First();
+            return View();
+        }
 
         public IActionResult FindStreaks()
         {
-            var sql = System.IO.File.ReadAllText(Path.Combine(_webHostEnvironment.WebRootPath, "sql", "FindStreaks.sql"));
+            string sql = System.IO.File.ReadAllText(Path.Combine(_webHostEnvironment.WebRootPath, "sql", "FindStreaks.sql"));
             _context.Database.ExecuteSqlRaw(sql);
             return RedirectToAction(nameof(Index));
         }
