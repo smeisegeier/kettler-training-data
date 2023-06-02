@@ -66,3 +66,11 @@
     <PackageReference Include="DextersLabor" Version="0.9.2" />
   </ItemGroup>
 ```
+
+## deployment
+
+1. run `dotnet publish` or the `publish` task if set up
+1. now there is a folder bin/publish
+1. rightclick ➡️ `Deploy to web ..`
+1. sign in to azure
+1. follow instructions in `F1` window
