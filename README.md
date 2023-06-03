@@ -10,7 +10,7 @@
 ### azure-data-facory
 
 - `.xml` files are uploaded into the `azure-data-facory` via azure blobs
-- [![Azure](https://badgen.net/badge/icon/azure?icon=azure&label)](https://azure.microsoft.com) pipeline transformes xml structures into sql tables
+- [![Azure](https://badgen.net/badge/icon/azure?icon=azure&label)](https://azure.microsoft.com) pipeline transforms xml structures into sql tables
 
 ```python
 📦src
@@ -69,8 +69,12 @@
 
 ## deployment
 
+### plain
+
 1. run `dotnet publish` or the `publish` task if set up
 1. now there is a folder bin/publish
 1. rightclick ➡️ `Deploy to web ..`
 1. sign in to azure
 1. follow instructions in `F1` window
+
+### github actions
