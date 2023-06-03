@@ -9,7 +9,7 @@ on:
 env:
   AZURE_WEBAPP_NAME: KettlerFileUploader
   AZURE_WEBAPP_ROOT: './src/file-uploader' 
-  AZURE_WEBAPP_PACKAGE_PATH: './src/file-uploader/published'
+  AZURE_WEBAPP_PACKAGE_PATH: './publish'
   NETCORE_VERSION: '7.x'
 
 # lets see

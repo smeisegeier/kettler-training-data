@@ -79,8 +79,10 @@
 
 ### github actions
 
-- follow instructions [here](https://learn.microsoft.com/en-us/azure/app-service/deploy-github-actions?tabs=applevel)
-
 1. use the `.yaml` template here if possible
-1. click through deployment center
-1. optional: add secret to github
+2. click through deployment center to set up the secret, so no need to manually add this to github
+3. care for env variables. path strings must be set
+4. database settings:
+5. watch progress on github repo ➡️ `actions`
+
+- further reading [here](https://learn.microsoft.com/en-us/azure/app-service/deploy-github-actions?tabs=applevel)
