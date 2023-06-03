@@ -86,3 +86,11 @@
 5. watch progress on github repo ➡️ `actions`
 
 - further reading [here](https://learn.microsoft.com/en-us/azure/app-service/deploy-github-actions?tabs=applevel)
+
+### azure vault
+
+- azure vault: read [here](https://www.loginradius.com/blog/engineering/guest-post/using-azure-key-vault-with-an-azure-web-app-in-c-sharp/)
+- 💡use preferred access model (role based)
+- add access to the vault from the web app identity page (reader)
+- add section in `appsettings.json`
+- create interface

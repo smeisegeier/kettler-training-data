@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Azure;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -26,27 +27,35 @@ namespace FileUploader
         {
             Configuration = configuration;
         }
-        public readonly static string? db_con = "";
-
-        //* get constring from localsettings
-        // public readonly static string? db_con =
-        //     System.Configuration.ConfigurationManager.AppSettings.Get("db_con");
-
+        public string db_con = "";
 
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            // //* azure option
+            // services.AddAzureClients(azureClientFactoryBuilder =>
+            // {
+            // 	azureClientFactoryBuilder.AddSecretClient(Configuration.GetSection("KeyVault"));
+            // });
+            // services.AddSingleton<IKeyVaultManager, KeyVaultManager>();
+
+            // db_con = ConfigurationExtensions.GetConnectionString(Configuration, "kettler-db-con");
+            db_con = "Server=tcp:demosqlserverxd.database.windows.net,1433;Database=DemoSqlDb;Authentication=Active Directory Managed Identity;Trusted_Connection=False;Encrypt=True;PersistSecurityInfo=True;";
+
+            //* get constring from localsettings
+            // db_con = System.Configuration.ConfigurationManager.AppSettings.Get("db_con");
 
             // $env:ASPNETCORE_ENVIRONMENT='Staging'
             services.AddControllersWithViews();
 
-            // services.AddDbContext<MyDbContext>(options => options.UseInMemoryDatabase("Test"));
-
             services.AddDbContext<MyDbContext>(options => options
                 .UseSqlServer(db_con)
                 );
+
+            //* inmemory option
+            // services.AddDbContext<MyDbContext>(options => options.UseInMemoryDatabase("Test"));
         }
 
         //* This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
