@@ -78,3 +78,9 @@
 1. follow instructions in `F1` window
 
 ### github actions
+
+- follow instructions [here](https://learn.microsoft.com/en-us/azure/app-service/deploy-github-actions?tabs=applevel)
+
+1. sign in to azure
+1. click through deployment center
+1. optional: add secret to github
