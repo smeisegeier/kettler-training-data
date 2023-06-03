@@ -87,7 +87,36 @@
 
 - further reading [here](https://learn.microsoft.com/en-us/azure/app-service/deploy-github-actions?tabs=applevel)
 
-### azure vault
+## azure vault
+
+### set up user
+
+- azure -> server -> Azure Active Directory -> set admin
+- if there is no eligible user, create a new one in Azure Active Directory
+- ⚠️ maybe use these credentials for azure login!
+- now login to the target database on this server using
+
+### set roles
+
+- web app -> Identity -> Add role assignment
+  - key vault
+  - sql server
+- login as azure admin (not the regular account!) and access sql db:
+
+```sql
+CREATE USER KettlerFileUploader FROM EXTERNAL PROVIDER
+ALTER ROLE db_datareader ADD MEMBER KettlerFileUploader
+ALTER ROLE db_datawriter ADD MEMBER KettlerFileUploader
+```
+
+- now the constring can look like this. note how user/passwd is replaced
+
+```csharp
+db_con = "Server=tcp:demosqlserverxd.database.windows.net,1433;Database=DemoSqlDb;Authentication=Active Directory Managed Identity;Trusted_Connection=False;Encrypt=True;PersistSecurityInfo=True;";
+```
+
+- see [here](https://www.codemag.com/Article/2107041/Eliminate-Secrets-from-Your-Applications-with-Azure-Managed-Identity)
+- and [here](https://mderriey.com/2021/07/23/new-easy-way-to-use-aad-auth-with-azure-sql/)
 
 - azure vault: read [here](https://www.loginradius.com/blog/engineering/guest-post/using-azure-key-vault-with-an-azure-web-app-in-c-sharp/)
 - 💡use preferred access model (role based)
