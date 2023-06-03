@@ -1,0 +1,43 @@
+name: "build n deploy"
+
+on:
+  push:
+    # branches:
+    #   - master
+  workflow_dispatch:
+
+env:
+  AZURE_WEBAPP_NAME: KettlerFileUploader
+  AZURE_WEBAPP_ROOT: './src/file-uploader' 
+  AZURE_WEBAPP_PACKAGE_PATH: './src/file-uploader/published'
+  NETCORE_VERSION: '7.x'
+
+# lets see
+jobs:
+  build:
+   name: build n deploy
+   runs-on: ubuntu-latest
+   steps:
+   - uses: actions/checkout@v2       # actions/checkout is a repo
+    
+   - name: Setup .NET Core SDK ${{ env.NETCORE_VERSION }}
+     uses: actions/setup-dotnet@v1
+     with:
+      dotnet-version: ${{ env.NETCORE_VERSION }}
+
+   - name: Restore
+     run: dotnet restore ${{ env.AZURE_WEBAPP_ROOT }}
+    
+   - name: Build
+     run: dotnet build ${{ env.AZURE_WEBAPP_ROOT }}  --no-restore -c Release
+
+   - name: Publish
+     run: dotnet publish ${{ env.AZURE_WEBAPP_ROOT }} --configuration Release --no-build --output ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
+
+   - name: 'Deploy to azure web'
+     uses: azure/webapps-deploy@v2
+     with:
+      app-name: ${{ env.AZURE_WEBAPP_NAME }}
+      # publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
+      publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_9E1402F32E9E43CA83DA3BA782D669B8 }}   
+      package : ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
