@@ -28,8 +28,8 @@ namespace FileUploader
         }
 
         //* get constring from localsettings
-        public readonly static string? db_con =
-            System.Configuration.ConfigurationManager.AppSettings.Get("db_con");
+        // public readonly static string? db_con =
+        //     System.Configuration.ConfigurationManager.AppSettings.Get("db_con");
 
         public IConfiguration Configuration { get; }
 
@@ -41,9 +41,10 @@ namespace FileUploader
             services.AddControllersWithViews();
 
             // services.AddDbContext<MyDbContext>(options => options.UseInMemoryDatabase("Test"));
-            services.AddDbContext<MyDbContext>(options => options
-                .UseSqlServer(db_con)
-                );
+
+            // services.AddDbContext<MyDbContext>(options => options
+            //     .UseSqlServer(db_con)
+            //     );
         }
 
         //* This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

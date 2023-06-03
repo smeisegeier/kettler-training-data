@@ -81,6 +81,6 @@
 
 - follow instructions [here](https://learn.microsoft.com/en-us/azure/app-service/deploy-github-actions?tabs=applevel)
 
-1. sign in to azure
+1. use the `.yaml` template here if possible
 1. click through deployment center
 1. optional: add secret to github
