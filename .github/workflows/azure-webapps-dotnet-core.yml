@@ -86,4 +86,5 @@ jobs:
         with:
           app-name: ${{ env.AZURE_WEBAPP_NAME }}
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_9E1402F32E9E43CA83DA3BA782D669B8 }}
-          package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
+          # package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
+          package: ${{env.DOTNET_ROOT}}/myapp
