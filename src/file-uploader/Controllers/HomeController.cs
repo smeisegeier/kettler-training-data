@@ -42,6 +42,7 @@ namespace FileUploader.Controllers
             // var sql = System.IO.File.ReadAllText(Path.Combine(_webHostEnvironment.WebRootPath, "sql", "FindLastUpdate.sql"));
             // * you must name the col as [Value]
             FormattableString sql = $"SELECT max(TrainingDateTime) as [Value] FROM[kettler].[Trainings]";
+            // var result = "TEST";
             var result = _context.Database.SqlQuery<string>(sql);
             ViewBag.LastUpdate = result.First();
             return View();

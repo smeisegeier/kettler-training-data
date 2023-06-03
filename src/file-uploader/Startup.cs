@@ -14,7 +14,6 @@ using System.Threading.Tasks;
 
 namespace FileUploader
 {
-    // todo how
     /* excludes
      * 02.03.14
      * 12.04.14
@@ -28,32 +27,26 @@ namespace FileUploader
             Configuration = configuration;
         }
 
+        //* get constring from localsettings
+        public readonly static string? db_con =
+            System.Configuration.ConfigurationManager.AppSettings.Get("db_con");
+
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
 
-            // get secret store
-            var config = new ConfigurationBuilder()
-                .AddUserSecrets<Program>()
-                .Build();
-            // retrieve secrets
-            var db_con = config["db_con"];
-
             // $env:ASPNETCORE_ENVIRONMENT='Staging'
             services.AddControllersWithViews();
-            //services.AddDbContext<MyDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
-            //services.AddDbContext<MyDbContext>(options => options.UseInMemoryDatabase("Test"));
-
+            // services.AddDbContext<MyDbContext>(options => options.UseInMemoryDatabase("Test"));
             services.AddDbContext<MyDbContext>(options => options
                 .UseSqlServer(db_con)
                 );
-
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+        //* This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             //if (env.IsDevelopment())
