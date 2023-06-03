@@ -1,9 +1,9 @@
 name: "build n deploy"
 
 on:
-  push:
-    # branches:
-    #   - master
+  # push:
+  #   branches:
+  #     - main
   workflow_dispatch:
 
 env:
