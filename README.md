@@ -105,7 +105,13 @@
 
 ### set roles
 
-- login as azure admin (not the regular account!) and access sql db:
+- web app -> Identity -> Add role assignment
+
+  - key vault
+  - sql server
+
+- web app must have identity name `KettlerFileUploader` in this example
+- login as azure admin (not the regular account!) and access sql db
 
 ```sql
 CREATE USER KettlerFileUploader FROM EXTERNAL PROVIDER
@@ -113,16 +119,15 @@ ALTER ROLE db_datareader ADD MEMBER KettlerFileUploader
 ALTER ROLE db_datawriter ADD MEMBER KettlerFileUploader
 ```
 
-- web app -> Identity -> Add role assignment
-
-  - key vault
-  - sql server
+> note the name of the webapp
 
 - now the constring can look like this. note how user/passwd is replaced
 
 ```csharp
 db_con = "Server=tcp:demosqlserverxd.database.windows.net,1433;Database=DemoSqlDb;Authentication=Active Directory Managed Identity;Trusted_Connection=False;Encrypt=True;PersistSecurityInfo=True;";
 ```
+
+- ⚠️this constring requires the app to run in **azure** environment, it wont run on local machine debugging
 
 - see [here](https://www.codemag.com/Article/2107041/Eliminate-Secrets-from-Your-Applications-with-Azure-Managed-Identity)
 - and [here](https://mderriey.com/2021/07/23/new-easy-way-to-use-aad-auth-with-azure-sql/)

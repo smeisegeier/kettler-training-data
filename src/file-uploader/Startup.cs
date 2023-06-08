@@ -23,29 +23,28 @@ namespace FileUploader
 
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+        public Startup(IConfiguration configuration, IWebHostEnvironment env)
         {
             Configuration = configuration;
+            Environment = env;
         }
-        public string db_con = "";
+        public string db_con = null;
 
         public IConfiguration Configuration { get; }
+        public IWebHostEnvironment Environment { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            // //* azure option
-            // services.AddAzureClients(azureClientFactoryBuilder =>
-            // {
-            // 	azureClientFactoryBuilder.AddSecretClient(Configuration.GetSection("KeyVault"));
-            // });
-            // services.AddSingleton<IKeyVaultManager, KeyVaultManager>();
 
-            // db_con = ConfigurationExtensions.GetConnectionString(Configuration, "kettler-db-con");
+            //* azure option
             db_con = "Server=tcp:demosqlserverxd.database.windows.net,1433;Database=DemoSqlDb;Authentication=Active Directory Managed Identity;Trusted_Connection=False;Encrypt=True;PersistSecurityInfo=True;";
 
             //* get constring from localsettings
             // db_con = System.Configuration.ConfigurationManager.AppSettings.Get("db_con");
+
+            //* inmemory option
+            // services.AddDbContext<MyDbContext>(options => options.UseInMemoryDatabase("Test"));
 
             // $env:ASPNETCORE_ENVIRONMENT='Staging'
             services.AddControllersWithViews();
@@ -54,8 +53,6 @@ namespace FileUploader
                 .UseSqlServer(db_con)
                 );
 
-            //* inmemory option
-            // services.AddDbContext<MyDbContext>(options => options.UseInMemoryDatabase("Test"));
         }
 
         //* This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
