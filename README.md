@@ -93,14 +93,18 @@
 
 - azure -> server -> Azure Active Directory -> set admin
 - if there is no eligible user, create a new one in Azure Active Directory
-- ⚠️ maybe use these credentials for azure login!
-- now login to the target database on this server using
+- now give permissions:
+  - choose subscription
+  - ➡️IAM
+  - add role assignment
+  - Privileged administrator roles ➡️owner
+  - members ➡️choose user
+- wait 2mins 😄
+- now use these credentials for azure login!
+- login to the target database on this server
 
 ### set roles
 
-- web app -> Identity -> Add role assignment
-  - key vault
-  - sql server
 - login as azure admin (not the regular account!) and access sql db:
 
 ```sql
@@ -108,6 +112,11 @@ CREATE USER KettlerFileUploader FROM EXTERNAL PROVIDER
 ALTER ROLE db_datareader ADD MEMBER KettlerFileUploader
 ALTER ROLE db_datawriter ADD MEMBER KettlerFileUploader
 ```
+
+- web app -> Identity -> Add role assignment
+
+  - key vault
+  - sql server
 
 - now the constring can look like this. note how user/passwd is replaced
 
