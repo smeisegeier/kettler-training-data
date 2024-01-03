@@ -34,15 +34,14 @@
 
 ### 1️⃣ using ![Microsoft Excel](https://img.shields.io/badge/Microsoft_Excel-217346?style=flat&logo=microsoft-excel&logoColor=white) [![PowerPivot](https://badgen.net/badge/icon/powerpivot?icon=powerpivot&label)](https://www.powerpivot.com/)
 
-> impressions
+#### 2023 at a glance
 
-<img src="docs/img/2023-02-05-12-58-53.png" alt="impression" width=500 border=1 /><br/>
+<!-- <img src="docs/img/2023-02-05-12-58-53.png" alt="impression" width=500 border=1 /><br/> -->
+![2023](img/2024-01-03-23-36-30.png)
 
 ### 2️⃣ using ![Python](https://img.shields.io/badge/python-3670A0?style=flat&logo=python&logoColor=ffdd54)
 
 - under construction 🚧
-
-> note: probably not. power pivot is still way too strong
 
 ## built with
 
