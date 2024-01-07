@@ -39,6 +39,11 @@
 <!-- <img src="docs/img/2023-02-05-12-58-53.png" alt="impression" width=500 border=1 /><br/> -->
 ![2023](img/2024-01-03-23-36-30.png)
 
+#### all years
+![all years values](img/2024-01-07-17-14-26.png)
+
+![all years chart](img/2024-01-07-17-10-37.png)
+
 ### 2️⃣ using ![Python](https://img.shields.io/badge/python-3670A0?style=flat&logo=python&logoColor=ffdd54)
 
 - under construction 🚧
