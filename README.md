@@ -3,7 +3,7 @@
 ## about
 
 - the aim of this repo is to process and store `.xml` based training data from kettler `SJ10X SKYLON 5`
-- it comprises concurring approaches for processing: `azure-data-facory` and `net-core-webapp`
+- it comprises concurring approaches for processing: `azure-data-facory`, `net-core-webapp` and `python`
 
 ## processing
 
