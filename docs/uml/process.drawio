@@ -1,15 +1,15 @@
 <mxfile host="65bd71144e">
     <diagram id="VbwZuWxXlByfJ0BU3jXf" name="Page-1">
-        <mxGraphModel dx="830" dy="926" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="687" dy="926" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
                 <mxCell id="12" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="450" y="60" width="360" height="410" as="geometry"/>
                 </mxCell>
-                <mxCell id="19" style="edgeStyle=none;html=1;" parent="1" source="26" target="11" edge="1">
+                <mxCell id="19" style="edgeStyle=none;html=1;" parent="1" source="28" target="11" edge="1">
                     <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="646.3734243697479" y="147.04999999999995" as="sourcePoint"/>
+                        <mxPoint x="644.453781512605" y="142.79999999999995" as="sourcePoint"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="4" value="user" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
@@ -27,7 +27,7 @@
                 <mxCell id="6" value="usb-stick" style="pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#4495D1;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;shape=mxgraph.veeam.usb;" parent="1" vertex="1">
                     <mxGeometry x="290" y="101.6" width="52.8" height="18.4" as="geometry"/>
                 </mxCell>
-                <mxCell id="18" style="edgeStyle=none;html=1;" parent="1" source="9" edge="1">
+                <mxCell id="18" style="edgeStyle=none;html=1;" parent="1" source="9" edge="1" target="28">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="606.25" y="110.79999999999995" as="targetPoint"/>
                     </mxGeometry>
@@ -56,14 +56,14 @@
                 <mxCell id="21" value="python-script" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.android;fillColor=#FFD44F;gradientColor=none;" parent="1" vertex="1">
                     <mxGeometry x="300" y="367" width="73.5" height="84" as="geometry"/>
                 </mxCell>
-                <mxCell id="26" value="&lt;span style=&quot;background-color: rgb(42, 37, 47);&quot;&gt;data-upload&lt;/span&gt;&lt;br style=&quot;background-color: rgb(42, 37, 47);&quot;&gt;&lt;span style=&quot;background-color: rgb(42, 37, 47);&quot;&gt;https://kettlerfileuploader.azurewebsites.net/Home/Dropzone&lt;/span&gt;" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/app_services/App_Services.svg;" parent="1" vertex="1">
-                    <mxGeometry x="598" y="78.80000000000001" width="64" height="64" as="geometry"/>
-                </mxCell>
                 <UserObject label="azure-cloud" placeholders="1" name="Variable" id="27">
                     <mxCell style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;overflow=hidden;" parent="1" vertex="1">
                         <mxGeometry x="700" y="470" width="110" height="60" as="geometry"/>
                     </mxCell>
                 </UserObject>
+                <mxCell id="28" value="data-upload&lt;br&gt;https://kettlerfileuploader.azurewebsites.net/Home/Dropzone" style="verticalLabelPosition=bottom;sketch=0;aspect=fixed;html=1;verticalAlign=top;strokeColor=none;align=center;outlineConnect=0;shape=mxgraph.citrix.browser;" vertex="1" parent="1">
+                    <mxGeometry x="606.25" y="74.55000000000001" width="47.5" height="72.5" as="geometry"/>
+                </mxCell>
             </root>
         </mxGraphModel>
     </diagram>
